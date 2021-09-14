@@ -1,1 +1,9 @@
-@import "partials/custom";
+$primary: #e92569;
+$light: #efefef;
+$dark: #0a0a0a;
+$dark-grey: #767676;
+$background-gradient: radial-gradient(
+  circle,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(229, 229, 229, 1) 100%
+);
