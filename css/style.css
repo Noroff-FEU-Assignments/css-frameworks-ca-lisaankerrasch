@@ -10649,6 +10649,15 @@ body {
   flex-direction: column;
 }
 
+.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
 .wrapper {
   flex: 1 0 auto;
 }
@@ -10688,6 +10697,16 @@ p {
   margin-right: 40px;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  width: 100%;
+  background-color: #efefef;
+  z-index: 1;
+}
+
 .form-control {
   border: none;
   border-radius: 5 px 0 0 5px;
@@ -10709,8 +10728,10 @@ p {
   background-position: center center;
 }
 
-.carousel-indicators {
-  border-radius: 8px;
+.carousel-indicators [data-bs-target] {
+  border-radius: 5px;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .carousel-indicators .active {
@@ -10779,28 +10800,64 @@ p {
 
 .accordion {
   margin: 50px 0 150px;
-  border-radius: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  background: none;
+  overflow: hidden;
+  border-radius: 20px;
+  border-collapse: separate;
 }
 
 .accordion-item {
   border: none;
-  border-radius: 50px;
+  overflow: hidden;
 }
 
 .accordion-body {
   background-image: radial-gradient(circle, white 2%, whitesmoke 98%);
 }
 
+.accordion-body img {
+  display: block;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.accordion-body .share-container {
+  color: #0a0a0a;
+  margin: 24px auto 0;
+}
+
 .accordion-button {
-  color: #e92569 !important;
-  background-color: #ffffff !important;
-  border: none;
-  border-bottom: #e92569;
+  color: #e92569;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-radius: 20px 20px 0 0;
+  border-collapse: separate !important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type .accordion-body {
+  border-radius: 0 0 20px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e92569;
 }
 
 .accordion-button:not(.collapsed)::after,
 .accordion-button::after {
   background-image: none;
+}
+
+.card {
+  width: 264px !important;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 10px;
 }
 
 .footer {

@@ -13,6 +13,7 @@ $background-gradient-card: radial-gradient(
   rgba(255, 255, 255, 1) 2%,
   rgba(245, 245, 245, 1) 98%
 );
+$shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
 
 /* Carousel */
 
@@ -20,4 +21,4 @@ $carousel-indicator-height: 30px;
 $carousel-indicator-spacer: 10px;
 $carousel-indicator-opacity: 1;
 $carousel-indicator-active-bg: $white;
-$carousel-border-radius: 8px;
+$carousel-border-radius: 5px;

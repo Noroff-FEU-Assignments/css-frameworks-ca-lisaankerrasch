@@ -3,8 +3,10 @@
   background-position: center center;
 }
 
-.carousel-indicators {
+.carousel-indicators [data-bs-target] {
   border-radius: $carousel-border-radius;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 .carousel-indicators .active {
@@ -14,4 +16,3 @@
 .carousel-inner {
   max-height: 500px;
 }
-

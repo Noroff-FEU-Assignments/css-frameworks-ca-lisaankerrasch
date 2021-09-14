@@ -22,6 +22,16 @@
   margin-right: 40px;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-collapse {
+  width: 100%;
+  background-color: $light;
+  z-index: 1;
+}
+
 .form-control {
   border: none;
   border-radius: 5 px 0 0 5px;
