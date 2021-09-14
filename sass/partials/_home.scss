@@ -1,0 +1,17 @@
+.carousel-item {
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-indicators {
+  border-radius: $carousel-border-radius;
+}
+
+.carousel-indicators .active {
+  background-color: $primary;
+}
+
+.carousel-inner {
+  max-height: 500px;
+}
+

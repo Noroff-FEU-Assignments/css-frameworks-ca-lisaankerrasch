@@ -2,8 +2,22 @@ $primary: #e92569;
 $light: #efefef;
 $dark: #0a0a0a;
 $dark-grey: #767676;
+$white: #ffffff;
 $background-gradient: radial-gradient(
   circle,
   rgba(255, 255, 255, 1) 0%,
   rgba(229, 229, 229, 1) 100%
 );
+$background-gradient-card: radial-gradient(
+  circle,
+  rgba(255, 255, 255, 1) 2%,
+  rgba(245, 245, 245, 1) 98%
+);
+
+/* Carousel */
+
+$carousel-indicator-height: 30px;
+$carousel-indicator-spacer: 10px;
+$carousel-indicator-opacity: 1;
+$carousel-indicator-active-bg: $white;
+$carousel-border-radius: 8px;

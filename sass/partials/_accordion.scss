@@ -1,0 +1,25 @@
+.accordion {
+  margin: 50px 0 150px;
+  border-radius: 30px;
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 50px;
+}
+
+.accordion-body {
+  background-image: $background-gradient-card;
+}
+
+.accordion-button {
+  color: $primary !important;
+  background-color: $white !important;
+  border: none;
+  border-bottom: $primary;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+  background-image: none;
+}
