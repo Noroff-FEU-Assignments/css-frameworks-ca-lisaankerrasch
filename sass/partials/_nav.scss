@@ -1,25 +1,24 @@
-.navbar {
+.nav {
   height: 70px;
-}
 
-.nav-link {
-  color: $dark !important;
-  padding: 0 30px;
-  margin-right: 20px;
-}
+  &__link {
+    color: $dark !important;
+    padding: 0 30px;
+    margin-right: 20px;
+  }
 
-.active {
-  background-color: $white;
-  color: $dark;
-}
+  &__link--active {
+    background-color: $white;
+  }
 
-.navbar-brand {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
-  color: $primary !important;
-  margin-right: 40px;
+  &__logo {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    color: $primary !important;
+    margin-right: 40px;
+  }
 }
 
 .navbar-toggler {

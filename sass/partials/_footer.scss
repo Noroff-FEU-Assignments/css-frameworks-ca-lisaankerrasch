@@ -1,21 +1,32 @@
 .footer {
   background-color: $white;
+  margin-top: 130px;
 
   &__flex {
-    height: 53px;
+    height: 165px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: $tablet) {
+      height: 53px;
+      flex-direction: row;
+    }
   }
 
   &__icons {
     display: flex;
+    // margin-top: 40px;
   }
 
   &__icon {
-    margin-right: 20px;
+    margin-right: 10px;
+
+    @media (min-width: $tablet) {
+      margin-right: 20px;
+    }
   }
 
   p {

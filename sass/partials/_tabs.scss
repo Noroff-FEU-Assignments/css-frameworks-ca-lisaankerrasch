@@ -1,19 +1,33 @@
-.tabs {
+.tab-container {
   margin-top: 60px;
-  margin-bottom: 250px;
-}
+  margin-bottom: 100px;
 
-.tab-content {
-  background-color: $white;
-  padding: 2em;
-  min-height: 150px;
-  border-radius: 12px 12px 12px 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  margin-top: -7px;
-}
+  &__link {
+    color: $primary !important;
+    height: 60px;
+  }
 
-.nav-tabs {
-  font-size: 1.2em;
+  &__button {
+    font-size: 1.2em;
+  }
+
+  &__content {
+    background-color: $white;
+    padding: 2em;
+    min-height: 150px;
+    border-radius: 0 12px 12px 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin-top: -15px;
+  }
+
+  &__img {
+    max-height: 150px;
+    margin: 0 25px 40px 0;
+  }
+
+  &__text {
+    margin-bottom: 80px;
+  }
 }
 
 .nav-tabs .nav-link.active,
@@ -25,31 +39,22 @@
   height: 60px;
 }
 
-.nav-tabs .nav-link {
-  color: $primary !important;
-  height: 60px;
-}
-
 .tab-flex {
   display: flex;
   flex-direction: row;
 }
 
-.tab-flex img {
-  max-height: 150px;
-  margin: 0 25px 40px;
-}
-
 .share-container {
+  color: $dark;
   width: 150px;
   margin-top: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
 
-.share-container p {
-  color: $dark;
-  text-transform: uppercase;
-  font-weight: bold;
+  &__text {
+    color: $dark;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 }

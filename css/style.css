@@ -10673,22 +10673,21 @@ p {
   color: #767676;
 }
 
-.navbar {
+.nav {
   height: 70px;
 }
 
-.nav-link {
+.nav__link {
   color: #0a0a0a !important;
   padding: 0 30px;
   margin-right: 20px;
 }
 
-.active {
+.nav__link--active {
   background-color: #ffffff;
-  color: #0a0a0a;
 }
 
-.navbar-brand {
+.nav__logo {
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-style: italic;
@@ -10742,22 +10741,36 @@ p {
   max-height: 500px;
 }
 
-.tabs {
+.tab-container {
   margin-top: 60px;
-  margin-bottom: 250px;
+  margin-bottom: 100px;
 }
 
-.tab-content {
+.tab-container__link {
+  color: #e92569 !important;
+  height: 60px;
+}
+
+.tab-container__button {
+  font-size: 1.2em;
+}
+
+.tab-container__content {
   background-color: #ffffff;
   padding: 2em;
   min-height: 150px;
-  border-radius: 12px 12px 12px 12px;
+  border-radius: 0 12px 12px 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  margin-top: -7px;
+  margin-top: -15px;
 }
 
-.nav-tabs {
-  font-size: 1.2em;
+.tab-container__img {
+  max-height: 150px;
+  margin: 0 25px 40px 0;
+}
+
+.tab-container__text {
+  margin-bottom: 80px;
 }
 
 .nav-tabs .nav-link.active,
@@ -10769,22 +10782,13 @@ p {
   height: 60px;
 }
 
-.nav-tabs .nav-link {
-  color: #e92569 !important;
-  height: 60px;
-}
-
 .tab-flex {
   display: flex;
   flex-direction: row;
 }
 
-.tab-flex img {
-  max-height: 150px;
-  margin: 0 25px 40px;
-}
-
 .share-container {
+  color: #0a0a0a;
   width: 150px;
   margin-top: 2.5rem;
   display: flex;
@@ -10792,7 +10796,7 @@ p {
   justify-content: space-between;
 }
 
-.share-container p {
+.share-container__text {
   color: #0a0a0a;
   text-transform: uppercase;
   font-weight: bold;
@@ -10854,23 +10858,145 @@ p {
 }
 
 .card {
-  width: 264px !important;
   margin-bottom: 2rem;
   border: none;
   border-radius: 10px;
 }
 
+.btn-primary {
+  color: #ffffff;
+  width: 100%;
+  text-transform: uppercase;
+  height: 2.6rem;
+  border: none;
+  position: relative;
+}
+
+.card .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 100%;
+  background: #767676;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.card img {
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 1.7rem;
+}
+
+.card-title {
+  color: #0a0a0a;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  margin-bottom: 1.2rem;
+}
+
+.pagination {
+  margin: 30px 0;
+}
+
+.page-item {
+  border: 1px solid #e92569;
+}
+
+.page-item:first-child {
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.page-item:last-child {
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+.pagination-lg .page-link {
+  padding: 0.5rem 1.1rem;
+  font-size: 1em;
+}
+
+.submit-form {
+  background-color: #efefef;
+  padding: 2rem;
+  font-size: 1.25em;
+}
+
+.submit-form input.form-control {
+  height: 3.5rem;
+}
+
+.submit-form input.form-control-message {
+  height: 224px;
+}
+
+.form-check-input {
+  background-color: #e92569;
+  border: none;
+  width: 34px;
+  height: 33px !important;
+  margin-right: 1rem;
+  height: 3.5rem;
+}
+
+.form-check-label {
+  font-size: 0.7em;
+}
+
+.btn-dark-grey {
+  height: 58px;
+  width: 100%;
+  background-color: #767676;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-info {
+  margin: 0 3rem;
+}
+
+.contact-info__item {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-info__item p {
+  margin-bottom: 0;
+}
+
+.contact-info svg {
+  margin-right: 2rem;
+}
+
 .footer {
   background-color: #ffffff;
+  margin-top: 130px;
 }
 
 .footer__flex {
-  height: 53px;
+  height: 165px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-shrink: 0;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__flex {
+    height: 53px;
+    flex-direction: row;
+  }
 }
 
 .footer__icons {
@@ -10878,7 +11004,13 @@ p {
 }
 
 .footer__icon {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer__icon {
+    margin-right: 20px;
+  }
 }
 
 .footer p {

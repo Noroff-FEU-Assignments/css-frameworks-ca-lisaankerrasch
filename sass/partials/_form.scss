@@ -1,0 +1,69 @@
+.submit-form {
+  background-color: $light;
+  padding: 2rem;
+  font-size: 1.25em;
+}
+
+.submit-form input.form-control {
+  height: 3.5rem;
+}
+
+.submit-form input.form-control-message {
+  height: 224px;
+}
+
+// .form-control {
+//   position: relative;
+// }
+
+// input .form-control-website::before {
+//   content: "https://";
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 84px;
+//   height: 100%;
+//   background: $grey;
+//   border-radius: 0 0.25rem 0.25rem 0;
+// }
+
+.form-check-input {
+  background-color: $primary;
+  border: none;
+  width: 34px;
+  height: 33px !important;
+  margin-right: 1rem;
+  height: 3.5rem;
+}
+
+.form-check-label {
+  font-size: 0.7em;
+}
+
+.btn-dark-grey {
+  height: 58px;
+  width: 100%;
+  background-color: $dark-grey;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.contact-info {
+  margin: 0 3rem;
+
+  &__item {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item p {
+    margin-bottom: 0;
+  }
+}
+
+.contact-info svg {
+  margin-right: 2rem;
+}
