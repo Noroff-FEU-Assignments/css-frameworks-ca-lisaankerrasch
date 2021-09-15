@@ -2,6 +2,7 @@
   background-color: $light;
   padding: 2rem;
   font-size: 1.25em;
+  box-shadow: $box-shadow;
 }
 
 .submit-form input.form-control {
@@ -11,21 +12,6 @@
 .submit-form input.form-control-message {
   height: 224px;
 }
-
-// .form-control {
-//   position: relative;
-// }
-
-// input .form-control-website::before {
-//   content: "https://";
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 84px;
-//   height: 100%;
-//   background: $grey;
-//   border-radius: 0 0.25rem 0.25rem 0;
-// }
 
 .form-check-input {
   background-color: $primary;
