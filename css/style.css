@@ -10581,7 +10581,9 @@ p {
 }
 
 .nav__link {
+  font-size: 18px;
   color: #0a0a0a !important;
+  padding: 1.5em;
   padding-left: 30px !important;
 }
 
@@ -10660,6 +10662,16 @@ p {
   border: none;
   color: #ffffff;
   background-color: #e92569;
+}
+
+.navbar-nav li:last-of-type {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav li:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .carousel-container__item {

@@ -2,7 +2,9 @@
   height: 70px;
 
   &__link {
+    font-size: 18px;
     color: $dark !important;
+    padding: 1.5em;
     padding-left: 30px !important;
 
     @media (min-width: $desktop) {
@@ -74,4 +76,12 @@
   border: none;
   color: $white;
   background-color: $primary;
+}
+
+.navbar-nav li:last-of-type {
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
