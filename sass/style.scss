@@ -22,14 +22,11 @@
 @import "../bootstrap-scss/navbar";
 @import "../bootstrap-scss/card";
 @import "../bootstrap-scss/accordion";
-@import "../bootstrap-scss/breadcrumb";
 @import "../bootstrap-scss/pagination";
-@import "../bootstrap-scss/badge";
 @import "../bootstrap-scss/alert";
 @import "../bootstrap-scss/progress";
 @import "../bootstrap-scss/list-group";
 @import "../bootstrap-scss/close";
-@import "../bootstrap-scss/toasts";
 @import "../bootstrap-scss/modal";
 @import "../bootstrap-scss/tooltip";
 @import "../bootstrap-scss/popover";
@@ -48,10 +45,12 @@
 @import "partials/layout.scss";
 @import "partials/typography.scss";
 @import "partials/nav.scss";
-@import "partials/home.scss";
+@import "partials/carousel.scss";
 @import "partials/tabs.scss";
 @import "partials/accordion.scss";
 @import "partials/cards.scss";
 @import "partials/pagination.scss";
 @import "partials/form.scss";
+@import "partials/contact.scss";
+
 @import "partials/footer.scss";

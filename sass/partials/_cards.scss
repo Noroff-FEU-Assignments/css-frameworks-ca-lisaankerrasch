@@ -2,15 +2,34 @@
   margin-bottom: 2rem;
   border: none;
   border-radius: 10px;
-}
 
-.btn-primary {
-  color: $white;
-  width: 100%;
-  text-transform: uppercase;
-  height: 2.6rem;
-  border: none;
-  position: relative;
+  &__body {
+    padding: 1.7rem;
+  }
+
+  &__img {
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__title {
+    color: $dark;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    margin-bottom: 1.2rem;
+  }
+
+  &__btn-primary {
+    color: $white;
+    width: 100%;
+    text-transform: uppercase;
+    height: 2.6rem;
+    border: none;
+    position: relative;
+  }
 }
 
 .card .btn::after {
@@ -22,23 +41,4 @@
   height: 100%;
   background: $dark-grey;
   border-radius: 0 0.25rem 0.25rem 0;
-}
-
-.card img {
-  height: 190px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.card-body {
-  padding: 1.7rem;
-}
-
-.card-title {
-  color: $dark;
-  margin-bottom: 1rem;
-}
-
-.card-text {
-  margin-bottom: 1.2rem;
 }

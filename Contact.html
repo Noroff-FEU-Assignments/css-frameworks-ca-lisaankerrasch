@@ -40,7 +40,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse align-full" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item nav__item">
                 <a class="nav-link nav__link" aria-current="page" href="index.html"
@@ -60,8 +60,8 @@
             </ul>
             <form class="d-flex nav__form">
               <input
-                class="form-control me-2"
-                type="search"
+              class="form-control nav__form-control me-2"
+              type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
@@ -75,9 +75,9 @@
       <div class="container contact-container">
         <div class="row">
             <div class="contact-info col-md order-md-3">
-                <div class="contact-info__item"><i class="fas fa-envelope fa-2x"></i>hello@yay.com</div>
-                <div class="contact-info__item"><i class="fas fa-phone fa-2x"></i>123 456 7890</div>
-                <div class="contact-info__item"><i class="fas fa-map-marker-alt fa-2x"></i><div><p>123 Some Street</p><p>Somewhere</p><p>Some City</p><p>10000</p></div></div>
+                <div class="contact-info__item"><i class="fas fa-envelope fa-2x contact-info__svg"></i>hello@yay.com</div>
+                <div class="contact-info__item"><i class="fas fa-phone fa-2x contact-info__svg"></i>123 456 7890</div>
+                <div class="contact-info__item"><i class="fas fa-map-marker-alt fa-2x contact-info__svg"></i><div><p>123 Some Street</p><p>Somewhere</p><p>Some City</p><p>10000</p></div></div>
             </div>
             <div class="row">
             <div class="col-md order-md-1">
@@ -85,7 +85,8 @@
             </div>
           </div>
         <div class="col-md order-md-1">
-            <form class="submit-form">
+          <div class="submit-form">
+            <form>
                 <div class="mb-3 submit-form__item">
                       Name</label
                     >
@@ -94,16 +95,8 @@
                       class="form-control"
                     />
                   </div>
-                <div class="mb-3 submit-form__item">
-                    Email </label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3 submit-form__item">
+                  <div class="before">
+                <div class="mb-3 submit-form__website">
                   <label class="form-label"
                     >Website</label
                   >
@@ -112,6 +105,7 @@
                     class="form-control"
                   />
                 </div>
+              </div>
                 <div class="mb-3 submit-form__item">
                     <label class="form-label"
                       >Message</label
@@ -124,15 +118,16 @@
                 <div class="mb-3 form-check submit-form__item">
                   <input
                     type="checkbox"
-                    class="form-check-input"
+                    class="form-check-input form-check__input"
                     id="exampleCheck1"
                   />
-                  <label class="form-check-label" for="exampleCheck1"
+                  <label class="form-check-label form-check__label" for="exampleCheck1"
                     >Allow us to sell your personal details to whomever we want</label
                   >
                 </div>
                 <button type="submit" class="btn btn-dark-grey">Submit</button>
               </form>
+            </div>
         </div>
       </div>
     </div>

@@ -28,6 +28,26 @@
   &__text {
     margin-bottom: 80px;
   }
+
+  &__share {
+    color: $dark;
+    width: 150px;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__text {
+      color: $dark;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .nav-tabs .nav-link.active,
@@ -39,22 +59,7 @@
   height: 60px;
 }
 
-.tab-flex {
-  display: flex;
-  flex-direction: row;
-}
-
-.share-container {
-  color: $dark;
-  width: 150px;
-  margin-top: 2.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  &__text {
-    color: $dark;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-}
+// .tab-flex {
+//   display: flex;
+//   flex-direction: row;
+// }
